@@ -57,9 +57,8 @@ def applyKFold(data,target,remove_noise):
 	return acc
 
 
-
 #The program starts here
-datasets=["haberman","bupa","iris","breast","ecoli","cleveland"]
+datasets=["haberman","bupa","iris","breast","ecoli","cleveland","pima","hepatitis","thyroid"]
 
 for dataset in datasets:
 	data,target = load_Data(dataset)

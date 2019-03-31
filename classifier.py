@@ -210,10 +210,11 @@ def applyKFold(data,target,remove_noise):
 	classifier_models_adasyn.get_accuracy(),classifier_models_tomek.get_accuracy()]
 	return accuracy_list
 
-
 #The program starts here
 datasets=["haberman","yeast","cleveland","pima","thyroid","segment"]#["haberman","bupa","breast","cleveland","pima","thyroid"]
 result_list=[]
+datasets=["haberman","bupa","iris","breast","ecoli","cleveland","pima","hepatitis","thyroid"]
+
 for dataset in datasets:
 	print(dataset)
 	data,target = load_Data(dataset)
